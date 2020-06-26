@@ -61,7 +61,7 @@ describe('Galactic', () => {
     const galactic = new Galactic(77,76,"Mercury");
     galactic.yearsPastExpect()
     console.log(galactic.yearsPastExpect())
-    expect(galactic.yearsPastExpect()).toEqual(1);
+    expect(galactic.yearsPastExpect()).toEqual(4);
    });
 
 });

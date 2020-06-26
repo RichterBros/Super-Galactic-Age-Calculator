@@ -57,7 +57,7 @@ export class Galactic {
         if (this.planet === "Earth" && this.age > this.lifeExpectancy){
             return this.age - this.lifeExpectancy;
         }else if( this.planet === "Mercury" && this.age > this.lifeExpectancy ){
-            return Math.round(this.age * 365 / 88) - (this.lifeExpectancy * 365 / 88)
+            return Math.round(this.age * 365 / 88) - Math.round(this.lifeExpectancy * 365 / 88)
         }
     }
 
