@@ -1,9 +1,24 @@
 export class Galactic {
-    constructor(age, lifeExpectancy) {
+    constructor(age, lifeExpectancy,planet) {
     this.age = age;
     this.lifeExpectancy = lifeExpectancy
     }
   
+    // planet(){
+
+    // if (this.planet = Mercury){
+    //     return Math.round(this.age * 365 / 88);
+
+
+    // }
+    
+    // }
+    
+    
+    
+    
+    
+    
     userAgeInDays(){
         return this.age * 365; 
         }

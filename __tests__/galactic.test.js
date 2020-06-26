@@ -57,6 +57,11 @@ describe('Galactic', () => {
     expect(galactic.yearsLeftMercury()).toEqual(128);
    });
   
-
+   test('should correctly calculate years over life expectancy', () => {
+    const galactic = new Galactic(45,76);
+    galactic.yearsPastExpect()
+    console.log(galactic.yearsPastExpect())
+    expect(galactic.yearsPastExpect()).toEqual(128);
+   });
 
 });
