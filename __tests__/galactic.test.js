@@ -25,7 +25,7 @@ describe('Galactic', () => {
     const galactic = new Galactic(45);
     galactic.venusAge()
     console.log(galactic.venusAge())
-    expect(galactic.venusAge()).toEqual(187);
+    expect(galactic.venusAge()).toEqual(73);
    });
 
 
