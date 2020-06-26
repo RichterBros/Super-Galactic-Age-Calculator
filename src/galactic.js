@@ -3,9 +3,11 @@ export class Galactic {
     this.age = age;
     }
   
-    mercuryAge(){
-        return this.age * 365 / 88
-   
-  }
+    userAgeInDays(){
+        return this.age * 365 
+   }
     
+    mercuryAge(){
+        return Math.round(this.age * 365 / 88)
+   }
 }

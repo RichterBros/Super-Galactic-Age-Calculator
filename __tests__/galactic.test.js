@@ -18,7 +18,7 @@ describe('Galactic', () => {
     const galactic = new Galactic(45);
     galactic.mercuryAge()
     console.log(galactic.mercuryAge())
-    expect(galactic.mercuryAge()).toEqual(186);
+    expect(galactic.mercuryAge()).toEqual(187);
    });
 
 
