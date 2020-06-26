@@ -14,7 +14,7 @@ describe('Galactic', () => {
     expect(galactic.userAgeInDays()).toEqual(16425);
    });
 
-   test('should correctly calculate users age mercury years', () => {
+   test('should correctly calculate users age Mercury years', () => {
     const galactic = new Galactic(45);
     
     galactic.mercuryAge()
@@ -22,21 +22,21 @@ describe('Galactic', () => {
     expect(galactic.mercuryAge()).toEqual(187);
    });
 
-   test('should correctly calculate users age venus years', () => {
+   test('should correctly calculate users age Venus years', () => {
     const galactic = new Galactic(45);
     galactic.venusAge()
     console.log(galactic.venusAge())
     expect(galactic.venusAge()).toEqual(73);
    });
 
-   test('should correctly calculate users age mars years', () => {
+   test('should correctly calculate users age Mars years', () => {
     const galactic = new Galactic(45);
     galactic.marsAge()
     console.log(galactic.marsAge())
     expect(galactic.marsAge()).toEqual(24);
    });
 
-   test('should correctly calculate users age jupiter years', () => {
+   test('should correctly calculate users age Jupiter years', () => {
     const galactic = new Galactic(45);
     galactic.jupiterAge()
     console.log(galactic.jupiterAge())
@@ -49,7 +49,14 @@ describe('Galactic', () => {
     console.log(galactic.lifeExpect())
     expect(galactic.lifeExpect()).toEqual(31);
    });
-
+   
+   test('should correctly calculate users life expectancy for Mercury', () => {
+    const galactic = new Galactic(45,76);
+    galactic.lifeExpectMars()
+    console.log(galactic.lifeExpectMars())
+    expect(galactic.lifeExpectMars()).toEqual(31);
+   });
+  
 
 
 });
