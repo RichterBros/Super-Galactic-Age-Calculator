@@ -12,8 +12,14 @@ describe('Galactic', () => {
     galactic.mercuryAge()
     console.log(galactic.mercuryAge())
     expect(galactic.mercuryAge()).toEqual(16425);
-   
-});
+   });
+
+   test('should correctly calculate users age mercury years', () => {
+    const galactic = new Galactic(45);
+    galactic.mercuryAge()
+    console.log(galactic.mercuryAge())
+    expect(galactic.mercuryAge()).toEqual(186);
+   });
 
 
 
