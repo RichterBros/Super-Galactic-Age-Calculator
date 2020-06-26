@@ -25,6 +25,6 @@ export class Galactic {
         }
 
     lifeExpect(){
-        return Math.round(this.age - this.lifeExpecancy)
+        return Math.round(this.age - this.lifeExpectancy)
         }
     }
