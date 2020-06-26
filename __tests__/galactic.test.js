@@ -50,18 +50,18 @@ describe('Galactic', () => {
     expect(galactic.yearsLeftEarth()).toEqual(31);
    });
    
-   test('should correctly calculate users years left on Mercury', () => {
-    const galactic = new Galactic(45,76);
-    galactic.yearsLeftMercury()
-    console.log(galactic.yearsLeftMercury())
-    expect(galactic.yearsLeftMercury()).toEqual(128);
+   test('should correctly calculate users years left on planet', () => {
+    const galactic = new Galactic(45,76,"Earth");
+    galactic.yearsLeftPlanets()
+    console.log(galactic.yearsLeftPlanets())
+    expect(galactic.yearsLeftPlanets()).toEqual(31);
    });
   
    test('should correctly calculate years over life expectancy', () => {
-    const galactic = new Galactic(45,76);
+    const galactic = new Galactic(77,76,"Mercury");
     galactic.yearsPastExpect()
     console.log(galactic.yearsPastExpect())
-    expect(galactic.yearsPastExpect()).toEqual(128);
+    expect(galactic.yearsPastExpect()).toEqual(1);
    });
 
 });
