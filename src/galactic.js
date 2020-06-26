@@ -1,7 +1,8 @@
 export class Galactic {
     constructor(age) {
     this.age = age;
-    }
+    
+}
   
     userAgeInDays(){
         return this.age * 365 
@@ -18,4 +19,8 @@ export class Galactic {
     marsAge(){
     return Math.round(this.age * 365 / 687)
     }
+
+    jupiterAge(){
+        return Math.round(this.age * 365 / 4329)
+        }
 }

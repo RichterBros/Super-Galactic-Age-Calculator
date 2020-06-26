@@ -16,6 +16,7 @@ describe('Galactic', () => {
 
    test('should correctly calculate users age mercury years', () => {
     const galactic = new Galactic(45);
+    
     galactic.mercuryAge()
     console.log(galactic.mercuryAge())
     expect(galactic.mercuryAge()).toEqual(187);
@@ -39,10 +40,15 @@ describe('Galactic', () => {
     const galactic = new Galactic(45);
     galactic.jupiterAge()
     console.log(galactic.jupiterAge())
-    expect(galactic.jupiterAge()).toEqual(24);
+    expect(galactic.jupiterAge()).toEqual(4);
    });
 
-
+   test('should correctly calculate users life expectancy for Earth', () => {
+    const galactic = new Galactic(45);
+    galactic.lifeExpect()
+    console.log(galactic.lifeExpect())
+    expect(galactic.lifeExpect()).toEqual(31);
+   });
 
 
 
