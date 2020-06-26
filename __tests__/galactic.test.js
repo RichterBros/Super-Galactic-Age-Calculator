@@ -28,6 +28,13 @@ describe('Galactic', () => {
     expect(galactic.venusAge()).toEqual(73);
    });
 
+   test('should correctly calculate users age mars years', () => {
+    const galactic = new Galactic(45);
+    galactic.marsAge()
+    console.log(galactic.marsAge())
+    expect(galactic.marsAge()).toEqual(73);
+   });
+
 
 
 
