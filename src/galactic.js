@@ -2,7 +2,7 @@ export class Galactic {
     constructor(age, lifeExpectancy) {
     this.age = age;
     this.lifeExpectancy = lifeExpectancy
-}
+    }
   
     userAgeInDays(){
         return this.age * 365; 
@@ -24,7 +24,14 @@ export class Galactic {
         return Math.round(this.age * 365 / 4329);
         }
 
-    lifeExpect(){
+    yearsLeftEarth(){
         return Math.round(this.lifeExpectancy - this.age);
         }
-    }
+    
+
+    yearsLeftMercury(){
+        return Math.round(this.lifeExpectancy - this.age);
+        }
+}
+  
+

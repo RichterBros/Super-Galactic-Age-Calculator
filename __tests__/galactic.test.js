@@ -43,16 +43,16 @@ describe('Galactic', () => {
     expect(galactic.jupiterAge()).toEqual(4);
    });
 
-   test('should correctly calculate users life expectancy for Earth', () => {
+   test('should correctly calculate users years left on Earth', () => {
     const galactic = new Galactic(45,76);
     galactic.lifeExpect()
     console.log(galactic.lifeExpect())
     expect(galactic.lifeExpect()).toEqual(31);
    });
    
-   test('should correctly calculate users life expectancy for Mercury', () => {
+   test('should correctly calculate users years left on Mercury', () => {
     const galactic = new Galactic(45,76);
-    galactic.lifeExpectMars()
+    galactic.lifeExpectMercury()
     console.log(galactic.lifeExpectMars())
     expect(galactic.lifeExpectMars()).toEqual(31);
    });
