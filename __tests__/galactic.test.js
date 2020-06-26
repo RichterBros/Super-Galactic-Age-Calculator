@@ -58,10 +58,17 @@ describe('Galactic', () => {
    });
   
    test('should correctly calculate years over life expectancy', () => {
-    const galactic = new Galactic(77,76,"Mercury");
+    const galactic = new Galactic(77,76,"Venus");
     galactic.yearsPastExpect()
     console.log(galactic.yearsPastExpect())
-    expect(galactic.yearsPastExpect()).toEqual(4);
+    expect(galactic.yearsPastExpect()).toEqual(2);
+   });
+
+   test('should correctly calculate users years left on inputted planet', () => {
+    const galactic = new Galactic(45,76,"Mars");
+    galactic.planetAge()
+    console.log(galactic.planetAge())
+    expect(galactic.planetAge()).toEqual(5);
    });
 
 });

@@ -5,15 +5,18 @@ export class Galactic {
         this.planet = planet
     }
 
-    // planet(){
+    planetAge() {
 
-    // if (this.planet = Mercury){
-    //     return Math.round(this.age * 365 / 88);
-
-
-    // }
-
-    // }
+        if (this.planet === "Mercury") {
+            return Math.round(this.age * 365 / 88);
+        } else if (this.planet === "Venus") {
+            return Math.round(this.age * 365 / 225);
+        } else if (this.planet === "Mars") {
+            return Math.round(this.age * 365 / 687);
+        } else if (this.planet === "Jupiter") {
+            return Math.round(this.age * 365 / 4329);
+        }
+    }
 
 
     userAgeInDays() {
@@ -54,15 +57,16 @@ export class Galactic {
     }
 
     yearsPastExpect() {
-        if (this.planet === "Earth" && this.age > this.lifeExpectancy){
+        if (this.planet === "Earth" && this.age > this.lifeExpectancy) {
             return this.age - this.lifeExpectancy;
-        }else if( this.planet === "Mercury" && this.age > this.lifeExpectancy ){
+        } else if (this.planet === "Mercury" && this.age > this.lifeExpectancy) {
             return Math.round(this.age * 365 / 88) - Math.round(this.lifeExpectancy * 365 / 88)
+        } else if (this.planet === "Venus" && this.age > this.lifeExpectancy) {
+            return Math.round(this.age * 365 / 225) - Math.round(this.lifeExpectancy * 365 / 225)
         }
+
+
     }
 
-
 }
-
-
 
