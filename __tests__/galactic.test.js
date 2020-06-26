@@ -7,10 +7,10 @@ describe('Galactic', () => {
     expect(galactic.age).toEqual(44);
    });
 
-   test('should correctly convert users age into mercury years ', () => {
-    const galactic = new Galactic(44);
-    galactic.mercuryAge()
-    expect(galactic.mercuryAge()).toEqual(188);
+   test('should correctly calculate users age in days', () => {
+    const galactic = new Galactic(45);
+    galactic.mercuryAge(age)
+    expect(galactic.mercuryAge()).toEqual(16,425);
    
 });
 
