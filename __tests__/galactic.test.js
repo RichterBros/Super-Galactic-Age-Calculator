@@ -9,7 +9,8 @@ describe('Galactic', () => {
 
    test('should correctly calculate users age in days', () => {
     const galactic = new Galactic(45);
-    galactic.mercuryAge(age)
+    galactic.mercuryAge()
+    console.log(galactic.mercuryAge())
     expect(galactic.mercuryAge()).toEqual(16,425);
    
 });

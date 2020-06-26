@@ -1,11 +1,11 @@
 export class Galactic {
     constructor(age) {
     this.age = age;
-     }
-  mercuryAge(age){
-    age * 365
-   
+    }
   
-}
+    mercuryAge(){
+        return this.age * 365
+   
+  }
     
 }
