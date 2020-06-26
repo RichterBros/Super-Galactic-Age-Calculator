@@ -30,8 +30,9 @@ export class Galactic {
     
 
     yearsLeftMercury(){
-        return Math.round(this.lifeExpectancy - this.age);
-        }
+       return Math.round(this.lifeExpectancy * 365 / 88) - Math.round(this.age * 365 / 88);
+        
+    }
 }
   
 
