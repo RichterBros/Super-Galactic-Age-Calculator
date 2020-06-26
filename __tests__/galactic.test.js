@@ -32,7 +32,14 @@ describe('Galactic', () => {
     const galactic = new Galactic(45);
     galactic.marsAge()
     console.log(galactic.marsAge())
-    expect(galactic.marsAge()).toEqual(73);
+    expect(galactic.marsAge()).toEqual(24);
+   });
+
+   test('should correctly calculate users age jupiter years', () => {
+    const galactic = new Galactic(45);
+    galactic.jupiterAge()
+    console.log(galactic.jupiterAge())
+    expect(galactic.jupiterAge()).toEqual(24);
    });
 
 

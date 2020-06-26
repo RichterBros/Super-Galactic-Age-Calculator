@@ -14,4 +14,8 @@ export class Galactic {
     venusAge(){
     return Math.round(this.age * 365 / 225)
     }
+
+    marsAge(){
+    return Math.round(this.age * 365 / 687)
+    }
 }
