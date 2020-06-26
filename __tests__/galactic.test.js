@@ -44,7 +44,7 @@ describe('Galactic', () => {
    });
 
    test('should correctly calculate users life expectancy for Earth', () => {
-    const galactic = new Galactic(45);
+    const galactic = new Galactic(45,76);
     galactic.lifeExpect()
     console.log(galactic.lifeExpect())
     expect(galactic.lifeExpect()).toEqual(31);
