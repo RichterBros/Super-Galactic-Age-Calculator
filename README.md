@@ -2,7 +2,7 @@
 
 #### _application that determines a user’s age based on a planet’s solar years._
 ##### __Created:__ 6/26/2020
-##### __Last Updated:__ 6/26/2020 
+##### __Last Updated:__ 6/29/2020 
 ##### By _**Erich Richter**_  
 
 ## Description
@@ -14,8 +14,8 @@ _A solar year lasts 365 days on planet Earth. However, the length of a solar yea
 | Spec| Example input | Example Output
 | ----------- | ----------- | ----------- |
 | User enters age | 45 Earth Years | 188 Mercury Years |
-|
-
+| User enters age and life expectancy age, program will include the option to see how many years user has left to live on a given planet | 45 Earth Years(current age), 76 years(life expectancy) | 24 Jupiter Years |
+| User enters age and life expectancy age, if user is over the over the average life expectancy, program will return the number of years past life expectancy | 80 Earth Years(current age), 76 years(life expectancy) | 2 Mars Years |
 
 ## Setup/Installation Requirements
 
